@@ -1,7 +1,6 @@
-import JSONDATA from "./MOCK_DATA.json";
+import JSONDATA from "../MOCK_DATA.json";
 import React, { useState,useMemo ,useEffect} from 'react';
 import debounce from 'lodash.debounce';
-// import "./App.css";
 export function Searchbar() {
   const [searchWord, setSearchWord] = useState("");//allows us to track state 
   const [datas,setData]=useState(JSONDATA);
@@ -29,12 +28,14 @@ export function Searchbar() {
   return (
     <center>
       <div className="App">
-        <input id="searchbar" type="text" placeholder='search by name'onChange={debounceD}/>
+        <input id ="searchbar"type="text" placeholder='search by name'onChange={debounceD}/>
         {
         datas.map((val, key) => {
           if(searchWord){
           let splitinput = val.first_name.split(searchWord)
-          return <div><p>{splitinput[0]}<em>{searchWord}</em>{splitinput[1]}</p></div>
+          return <div><p>{splitinput[0]}
+          {/* <em>{searchWord}</em> */}
+          {splitinput[1]}</p></div>
           }
           else {
             return <div><p>{val.first_name}</p></div>

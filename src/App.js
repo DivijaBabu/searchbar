@@ -1,5 +1,6 @@
 import React from 'react';
-import Searchbar from "./Components/searchbar";
+import Searchbar from "./Components/Searchbar/searchbar";
+import "./App.css";
 export  function App(){
 return(
   <center>
