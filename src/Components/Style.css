@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+  }
+  body{
+    background: #d3e3f3;
+    text-decoration: double;
+  }
+  #searchbar{
+    margin:1.5rem;
+    margin-top:2rem;
+    width:60%;
+    height: 2.5rem;
+    font-size: large;
+    padding:0 0.625rem ;
+    border:0.2rem solid #37376d;
+  }
+  p{
+    font-weight: 700;
+    font-size:1.5rem;
+    padding:0.5rem;
+    color: #2e3d4c;
+  }
+  
